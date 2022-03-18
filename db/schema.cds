@@ -28,3 +28,12 @@ namespace sap.capire.bookstore;
         amount    : Integer;
         netAmount : Decimal(9,2) @readonly;
     }
+
+    @Capabilities.Updatable: false
+    entity ReturnItems : cuid {
+        order_ID : UUID;
+        book_ID : UUID;
+        amount : Integer;
+        netAmount : Decimal(9, 2) @readonly;
+    }
+

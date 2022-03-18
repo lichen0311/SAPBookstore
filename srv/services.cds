@@ -12,6 +12,10 @@
         entity OrderItems as projection on db.OrderItems;
     }
 
+    service ReturnService {
+        entity ReturnItems as projection on db.ReturnItems;
+    }
+
     // Reuse Admin Service
     using { AdminService } from '@sap/capire-products';
     extend service AdminService with {
